@@ -9,9 +9,9 @@ const navItems = [
 
 export function HeroSection() {
   return (
-    <section className="relative flex min-h-screen flex-col bg-bg-primary">
-      <Container className="flex flex-1 flex-col py-6 md:py-8">
-        <header className="flex items-start justify-between gap-6">
+    <section className="relative bg-bg-primary pt-24 pb-32 md:pt-40 md:pb-48">
+      <Container>
+        <header className="flex items-start justify-between gap-6 pt-8 md:pt-0">
           <a
             href="#top"
             className="font-display text-[20px] font-medium tracking-[-0.01em] text-text-primary"
@@ -33,11 +33,11 @@ export function HeroSection() {
           </nav>
         </header>
 
-        <SectionReveal className="flex flex-1 items-center justify-center">
-          <div className="flex w-full justify-center py-16">
+        <SectionReveal className="mt-16 md:mt-24">
+          <div className="flex w-full justify-center">
             <h1
               id="top"
-              className="max-w-[10ch] text-center font-display text-[clamp(48px,7vw,96px)] font-medium leading-[1.05] tracking-[-0.03em] text-text-primary text-balance"
+              className="max-w-[11ch] text-center font-display text-[clamp(44px,5.5vw,80px)] font-medium leading-[1.05] tracking-[-0.03em] text-text-primary text-balance"
             >
               Building More Fighters Through Content
             </h1>

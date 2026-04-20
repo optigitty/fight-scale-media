@@ -5,7 +5,7 @@ import { SectionReveal } from "@/components/SectionReveal";
 
 export function OpportunitySection() {
   return (
-    <section id="work" className="bg-bg-alt py-16 md:py-24">
+    <section id="work" className="bg-bg-primary py-16 md:py-24">
       <SectionReveal>
         <Container>
           <SectionIntro

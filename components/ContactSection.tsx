@@ -4,7 +4,7 @@ import { SectionReveal } from "@/components/SectionReveal";
 
 export function ContactSection() {
   return (
-    <section id="contact" className="bg-bg-alt pt-16 md:pt-24">
+    <section id="contact" className="bg-bg-primary pt-16 md:pt-24">
       <SectionReveal>
         <Container>
           <SectionIntro label="Contact" title="Let&apos;s talk." />
