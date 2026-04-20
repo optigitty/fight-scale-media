@@ -1,49 +1,52 @@
-import type { Metadata, Viewport } from "next";
-import type { ReactNode } from "react";
-
-import { siteConfig } from "@/config/site";
-
+import type { Metadata } from "next";
+import { Inter, Space_Grotesk } from "next/font/google";
 import "./globals.css";
 
-export const metadata: Metadata = {
-  metadataBase: new URL(siteConfig.siteUrl),
-  title: siteConfig.title,
-  description: siteConfig.description,
-  alternates: {
-    canonical: "/"
-  },
-  openGraph: {
-    title: siteConfig.title,
-    description: siteConfig.description,
-    url: siteConfig.siteUrl,
-    siteName: siteConfig.name,
-    locale: "en_US",
-    type: "website"
-  },
-  twitter: {
-    card: "summary",
-    title: siteConfig.title,
-    description: siteConfig.description
-  },
-  robots: {
-    index: true,
-    follow: true
-  }
-};
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+  weight: ["400", "500"],
+  display: "swap",
+});
 
-export const viewport: Viewport = {
-  colorScheme: "dark",
-  themeColor: "#132017"
+const spaceGrotesk = Space_Grotesk({
+  subsets: ["latin"],
+  variable: "--font-space-grotesk",
+  weight: ["500", "600"],
+  display: "swap",
+});
+
+const siteUrl =
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://fight-scale-media.vercel.app";
+
+export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
+  title: "Fight Scale Media — Content for Combat Sports Gyms",
+  description:
+    "Social media content that grows combat sports gyms. Built by a fighter.",
+  openGraph: {
+    title: "Fight Scale Media — Content for Combat Sports Gyms",
+    description:
+      "Social media content that grows combat sports gyms. Built by a fighter.",
+    images: [
+      {
+        url: "/og-image.svg",
+        width: 1200,
+        height: 630,
+        alt: "Fight Scale Media",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
-  children
+  children,
 }: Readonly<{
-  children: ReactNode;
+  children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className="font-sans antialiased">{children}</body>
+    <html lang="en" className={`${inter.variable} ${spaceGrotesk.variable}`}>
+      <body>{children}</body>
     </html>
   );
 }

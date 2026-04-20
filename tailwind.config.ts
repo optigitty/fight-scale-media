@@ -1,52 +1,31 @@
 import type { Config } from "tailwindcss";
+import defaultTheme from "tailwindcss/defaultTheme";
 
 const config: Config = {
-  darkMode: ["class"],
   content: [
-    "./app/**/*.{ts,tsx}",
-    "./components/**/*.{ts,tsx}",
-    "./config/**/*.{ts,tsx}",
-    "./lib/**/*.{ts,tsx}"
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
       colors: {
-        border: "hsl(var(--border))",
-        input: "hsl(var(--input))",
-        ring: "hsl(var(--ring))",
-        background: "hsl(var(--background))",
-        foreground: "hsl(var(--foreground))",
-        muted: "hsl(var(--muted))",
-        "muted-foreground": "hsl(var(--muted-foreground))",
-        accent: "hsl(var(--accent))",
-        "accent-foreground": "hsl(var(--accent-foreground))"
+        "bg-primary": "#0A4D36",
+        "bg-alt": "#083D2B",
+        "text-primary": "#FFFFFF",
+        "text-secondary": "rgb(255 255 255 / 0.65)",
+        accent: "#E8D5A0",
+        hairline: "rgb(255 255 255 / 0.12)",
       },
       fontFamily: {
-        sans: [
-          "Inter",
-          "Inter Tight",
-          "SF Pro Display",
-          "SF Pro Text",
-          "Helvetica Neue",
-          "Arial",
-          "sans-serif"
-        ],
-        display: [
-          "Inter",
-          "Inter Tight",
-          "SF Pro Display",
-          "SF Pro Text",
-          "Helvetica Neue",
-          "Arial",
-          "sans-serif"
-        ]
+        body: ["var(--font-inter)", ...defaultTheme.fontFamily.sans],
+        display: ["var(--font-space-grotesk)", ...defaultTheme.fontFamily.sans],
       },
       maxWidth: {
-        content: "72rem"
-      }
-    }
+        content: "1200px",
+      },
+    },
   },
-  plugins: []
+  plugins: [],
 };
 
 export default config;
