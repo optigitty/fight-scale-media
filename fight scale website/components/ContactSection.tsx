@@ -35,7 +35,7 @@ export function ContactSection() {
 
           <footer className="mt-20 border-t border-hairline py-6">
             <p className="font-body text-[13px] text-white/50">
-              © 2026 Fight Scale Media
+              © 2026 Fight Forged Media
             </p>
           </footer>
         </Container>

@@ -21,19 +21,19 @@ const siteUrl =
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: "Fight Scale Media — Content for Combat Sports Gyms",
+  title: "Fight Forged Media — Content for Combat Sports Gyms",
   description:
-    "Social media content that grows combat sports gyms. Built by a fighter.",
+    "Fight Forged Media creates social media content that grows combat sports gyms. Built by a fighter.",
   openGraph: {
-    title: "Fight Scale Media — Content for Combat Sports Gyms",
+    title: "Fight Forged Media — Content for Combat Sports Gyms",
     description:
-      "Social media content that grows combat sports gyms. Built by a fighter.",
+      "Fight Forged Media creates social media content that grows combat sports gyms. Built by a fighter.",
     images: [
       {
         url: "/og-image.svg",
         width: 1200,
         height: 630,
-        alt: "Fight Scale Media",
+        alt: "Fight Forged Media",
       },
     ],
   },

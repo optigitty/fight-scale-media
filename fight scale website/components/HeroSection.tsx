@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Container } from "@/components/Container";
 import { SectionReveal } from "@/components/SectionReveal";
 
@@ -9,18 +10,28 @@ const navItems = [
 
 export function HeroSection() {
   return (
-    <section className="relative flex min-h-screen flex-col bg-bg-primary">
-      <Container className="flex flex-1 flex-col py-6 md:py-8">
-        <header className="flex items-start justify-between gap-6">
+    <section className="relative bg-bg-primary">
+      <Container className="pt-8 pb-32 md:pt-10 md:pb-48">
+        <header className="flex items-center justify-between gap-4">
           <a
             href="#top"
-            className="font-display text-[20px] font-medium tracking-[-0.01em] text-text-primary"
+            className="flex items-center gap-3"
           >
-            Fight Scale Media
+            <Image
+              src="/ff-logo.png"
+              alt="Fight Forged Media logo"
+              width={32}
+              height={32}
+              className="h-7 w-7 shrink-0 md:h-8 md:w-8"
+              priority
+            />
+            <span className="font-display text-[18px] font-medium tracking-[-0.01em] text-text-primary sm:text-[20px]">
+              Fight Forged Media
+            </span>
           </a>
 
           <nav aria-label="Section navigation">
-            <ul className="flex flex-wrap items-center justify-end gap-2 font-body text-[14px] font-medium text-text-secondary">
+            <ul className="flex flex-wrap items-center justify-end gap-2 font-body text-[13px] font-medium text-text-secondary sm:text-[14px]">
               {navItems.map((item, index) => (
                 <li key={item.href} className="flex items-center gap-2">
                   {index > 0 ? <span aria-hidden="true">·</span> : null}
@@ -33,13 +44,13 @@ export function HeroSection() {
           </nav>
         </header>
 
-        <SectionReveal className="flex flex-1 items-center justify-center">
-          <div className="flex w-full justify-center py-16">
+        <SectionReveal className="mt-24 md:mt-32">
+          <div className="flex w-full justify-center">
             <h1
               id="top"
-              className="max-w-[10ch] text-center font-display text-[clamp(48px,7vw,96px)] font-medium leading-[1.05] tracking-[-0.03em] text-text-primary text-balance"
+              className="max-w-[15ch] text-center font-display text-[clamp(44px,5.5vw,80px)] font-medium leading-[1.05] tracking-[-0.03em] text-text-primary text-balance"
             >
-              Building More Fighters Through Content
+              Bring In More Fighters in With No Extra Effort
             </h1>
           </div>
         </SectionReveal>

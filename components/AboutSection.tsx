@@ -17,10 +17,10 @@ const properties = [
     href: "https://instagram.com/goodvibesmma",
   },
   {
-    label: "App",
+    label: "Instagram",
     name: "HitSmart",
     description: "AI boxing analysis. Live on the App Store.",
-    href: "https://hitsmart.app",
+    href: "https://www.instagram.com/hitsmart.app/",
   },
 ];
 
