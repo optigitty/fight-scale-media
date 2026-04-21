@@ -17,41 +17,6 @@ export const siteConfig = {
     ctaLabel: "HitSmart Letters",
     disclaimer: "Free. One letter a week. Unsubscribe anytime."
   },
-  featureShowcase: {
-    label: "What HitSmart does",
-    title: "Real feedback from the footage, not guesswork from memory.",
-    items: [
-      {
-        title: "Pose Estimation",
-        description: "Frame-by-frame skeletal tracking of your movement."
-      },
-      {
-        title: "Punch Count",
-        description:
-          "Automatic detection and counting of every strike thrown."
-      },
-      {
-        title: "Punch Timeline",
-        description: "See when and where every punch lands across a round."
-      },
-      {
-        title: "Form Score",
-        description: "AI-graded technique assessment on each punch."
-      },
-      {
-        title: "Punch Force Analysis",
-        description: "Estimate punch force from video using biomechanics."
-      },
-      {
-        title: "Drills",
-        description: "Guided training drills to sharpen your skills."
-      },
-      {
-        title: "Concussion Screener",
-        description: "Baseline and post-impact cognitive screening."
-      }
-    ]
-  },
   philosophy: {
     eyebrow: "WHY WE'RE BUILDING THIS",
     heading: "The Mission Behind HitSmart",

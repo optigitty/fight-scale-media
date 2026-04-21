@@ -18,15 +18,15 @@ export function HeroSection() {
             className="flex items-center gap-3"
           >
             <Image
-              src="/hitsmart-logo.png"
-              alt="HitSmart logo"
-              width={36}
-              height={36}
-              className="h-8 w-8 shrink-0 md:h-9 md:w-9"
+              src="/ff-logo.png"
+              alt="Fight Forged Media logo"
+              width={32}
+              height={32}
+              className="h-7 w-7 shrink-0 md:h-8 md:w-8"
               priority
             />
-            <span className="font-display text-[18px] font-medium tracking-[-0.02em] text-text-primary sm:text-[20px]">
-              Hit <span className="text-[#72b97c]">Smart</span>
+            <span className="font-display text-[18px] font-medium tracking-[-0.01em] text-text-primary sm:text-[20px]">
+              Fight Forged Media
             </span>
           </a>
 
