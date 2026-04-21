@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Container } from "@/components/Container";
+import { HeroFunnelChart } from "@/components/HeroFunnelChart";
 import { SectionReveal } from "@/components/SectionReveal";
 
 const navItems = [
@@ -59,6 +60,8 @@ export function HeroSection() {
             >
               Get in Touch
             </a>
+
+            <HeroFunnelChart />
           </div>
         </SectionReveal>
       </Container>
