@@ -4,14 +4,14 @@ import { SectionReveal } from "@/components/SectionReveal";
 import { ArcGallery } from "@/components/ui/arc-gallery";
 
 const reelItems = [
-  { src: "/7.1M.jpg", views: "7.1M" },
-  { src: "/3.6M.jpg", views: "3.6M" },
-  { src: "/1.8M.jpg", views: "1.8M" },
-  { src: "/1.6M.jpg", views: "1.6M" },
-  { src: "/1M.jpg", views: "1M" },
-  { src: "/304k.jpg", views: "304K" },
-  { src: "/268k.jpg", views: "268K" },
-  { src: "/46k.jpg", views: "46K" },
+  { src: "/7.1M.jpg" },
+  { src: "/3.6M.jpg" },
+  { src: "/1.8M.jpg" },
+  { src: "/1.6M.jpg" },
+  { src: "/1M.jpg" },
+  { src: "/304k.jpg" },
+  { src: "/268k.jpg" },
+  { src: "/46k.jpg" },
 ];
 
 export function OpportunitySection() {
@@ -36,7 +36,7 @@ export function OpportunitySection() {
             coach.
           </p>
 
-          <div className="mt-16 md:mt-20">
+          <div className="mt-32 md:mt-40">
             <ArcGallery items={reelItems} />
           </div>
 

@@ -1,11 +1,9 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import { Eye } from "lucide-react";
 
 export type ArcGalleryItem = {
   src: string;
-  views: string;
 };
 
 type ArcGalleryProps = {
@@ -25,12 +23,12 @@ export const ArcGallery: React.FC<ArcGalleryProps> = ({
   items,
   startAngle = 15,
   endAngle = 165,
-  radiusLg = 520,
-  radiusMd = 380,
-  radiusSm = 240,
-  cardSizeLg = 170,
-  cardSizeMd = 130,
-  cardSizeSm = 90,
+  radiusLg = 420,
+  radiusMd = 320,
+  radiusSm = 220,
+  cardSizeLg = 150,
+  cardSizeMd = 115,
+  cardSizeSm = 80,
   className = "",
 }) => {
   const [dimensions, setDimensions] = useState({
@@ -89,7 +87,7 @@ export const ArcGallery: React.FC<ArcGalleryProps> = ({
             >
               <div
                 className="relative h-full w-full overflow-hidden rounded-xl shadow-2xl ring-1 ring-white/10 transition-transform duration-300 hover:scale-105"
-                style={{ transform: `rotate(${(angle - 90) / 8}deg)` }}
+                style={{ transform: `rotate(${(angle - 90) / 12}deg)` }}
               >
                 <img
                   src={item.src}
@@ -97,12 +95,6 @@ export const ArcGallery: React.FC<ArcGalleryProps> = ({
                   className="block h-full w-full object-cover"
                   draggable={false}
                 />
-                <div className="absolute bottom-2 left-2 flex items-center gap-1 rounded-full bg-black/70 px-2 py-1 backdrop-blur-sm">
-                  <Eye className="h-3 w-3 text-white" strokeWidth={2} />
-                  <span className="text-[11px] font-medium leading-none text-white">
-                    {item.views}
-                  </span>
-                </div>
               </div>
             </div>
           );
