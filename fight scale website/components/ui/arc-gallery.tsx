@@ -61,7 +61,7 @@ export const ArcGallery: React.FC<ArcGalleryProps> = ({
   return (
     <div
       className={`relative w-full ${className}`}
-      style={{ height: dimensions.radius * 0.85 }}
+      style={{ height: dimensions.radius + dimensions.cardSize * (8 / 9) }}
     >
       <div className="absolute left-1/2 bottom-0 -translate-x-1/2">
         {items.map((item, i) => {

@@ -32,8 +32,7 @@ export function OpportunitySection() {
           />
 
           <p className="mt-6 max-w-[680px] font-body text-[16px] leading-7 text-white/75">
-            Here&apos;s what&apos;s already working. All it takes is a mic on the
-            coach.
+            Here&apos;s what&apos;s already working:
           </p>
 
           <div className="mt-32 md:mt-40">
