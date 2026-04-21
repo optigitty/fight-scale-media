@@ -45,13 +45,20 @@ export function HeroSection() {
         </header>
 
         <SectionReveal className="mt-24 md:mt-32">
-          <div className="flex w-full justify-center">
+          <div className="flex w-full flex-col items-center">
             <h1
               id="top"
               className="max-w-[15ch] text-center font-display text-[clamp(44px,5.5vw,80px)] font-medium leading-[1.05] tracking-[-0.03em] text-text-primary text-balance"
             >
-              Bring In More Fighters in With No Extra Effort
+              Bring In More Fighters With No Extra Effort
             </h1>
+
+            <a
+              href="#contact"
+              className="mt-10 inline-flex items-center rounded-full border border-white/15 bg-white px-6 py-3 font-body text-[14px] font-medium text-bg-primary hover:bg-accent"
+            >
+              Get in Touch
+            </a>
           </div>
         </SectionReveal>
       </Container>

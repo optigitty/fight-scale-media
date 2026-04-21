@@ -16,12 +16,6 @@ const properties = [
     description: "Combat sports page. Grown from zero to 70K.",
     href: "https://instagram.com/goodvibesmma",
   },
-  {
-    label: "Instagram",
-    name: "HitSmart",
-    description: "AI boxing analysis. Live on the App Store.",
-    href: "https://www.instagram.com/hitsmart.app/",
-  },
 ];
 
 export function AboutSection() {
@@ -40,7 +34,7 @@ export function AboutSection() {
             your gym.
           </p>
 
-          <div className="mt-16 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-16 mx-auto grid max-w-4xl gap-5 md:grid-cols-2">
             {properties.map((property) => (
               <PropertyCard key={property.name} {...property} />
             ))}
