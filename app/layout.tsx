@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Space_Grotesk } from "next/font/google";
+import { siteConfig } from "@/config/site";
 import "./globals.css";
 
 const inter = Inter({
@@ -16,24 +17,21 @@ const spaceGrotesk = Space_Grotesk({
   display: "swap",
 });
 
-const siteUrl =
-  process.env.NEXT_PUBLIC_SITE_URL ?? "https://fight-scale-media.vercel.app";
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? siteConfig.siteUrl;
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: "Fight Forged Media — Content for Combat Sports Gyms",
-  description:
-    "Fight Forged Media creates social media content that grows combat sports gyms. Built by a fighter.",
+  title: siteConfig.title,
+  description: siteConfig.description,
   openGraph: {
-    title: "Fight Forged Media — Content for Combat Sports Gyms",
-    description:
-      "Fight Forged Media creates social media content that grows combat sports gyms. Built by a fighter.",
+    title: siteConfig.title,
+    description: siteConfig.description,
     images: [
       {
         url: "/og-image.svg",
         width: 1200,
         height: 630,
-        alt: "Fight Forged Media",
+        alt: siteConfig.name,
       },
     ],
   },
