@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Container } from "@/components/Container";
-import { HeroFunnelChart } from "@/components/HeroFunnelChart";
+import { GrowthFunnelSection } from "@/components/GrowthFunnelSection";
 import { SectionReveal } from "@/components/SectionReveal";
 
 const navItems = [
@@ -12,7 +12,7 @@ const navItems = [
 export function HeroSection() {
   return (
     <section className="relative bg-bg-primary">
-      <Container className="pt-8 pb-32 md:pt-10 md:pb-48">
+      <Container className="pt-8 pb-16 md:pt-10 md:pb-20">
         <header className="flex items-center justify-between gap-4">
           <a
             href="#top"
@@ -61,7 +61,7 @@ export function HeroSection() {
               Get in Touch
             </a>
 
-            <HeroFunnelChart />
+            <GrowthFunnelSection />
           </div>
         </SectionReveal>
       </Container>
